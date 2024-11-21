@@ -1,5 +1,5 @@
 import streamlit as st
-st.title("Thevenins theorem - 2205A21064 ARCHANA H") 
+st.title("Thevenins theorem - HII EVERYONE") 
 
 # Function to calculate IL and PL
 def calculate(Vth, Rth, RL):
