@@ -1,18 +1,12 @@
 import streamlit as st
-st.title("Thevenins theorem - 2205A21064 ARCHANA H") 
-
-# Function to calculate IL and PL
+st.title("Thevenins theorem - 2205A21068 _____________GANESH AZMEERA________________")  
 def calculate(Vth, Rth, RL):
-    IL = Vth / (Rth + RL)  # Load current (IL)
-    PL = IL * IL * RL      # Load power (PL)
+    IL = Vth / (Rth + RL)  
+    PL = IL * IL * RL      
     return IL, PL
-
-# Input fields for Vth, Rth, and RL
 Vth = st.number_input("Enter Vth (Volts):", value=0.0)
 Rth = st.number_input("Enter Rth (Ohms):", value=0.0)
 RL = st.number_input("Enter RL (Ohms):", value=0.0)
-
-# Button to perform calculation
 if st.button("Calculate"):
     IL, PL = calculate(Vth, Rth, RL)
     st.write(f"Load Current (IL): {IL:.4f} A")
